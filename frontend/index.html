@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Classificador de Emails com IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Classificador de Emails com IA</h1>
+    <p class="subtitle">
+      Cole o texto de um email ou envie um arquivo (.txt ou .pdf) para classificar como
+      <strong>Produtivo</strong> ou <strong>Improdutivo</strong> e gerar uma resposta automática.
+    </p>
+
+    <form id="email-form">
+      <label for="email-text">Texto do Email:</label>
+      <textarea id="email-text" rows="8" placeholder="Cole aqui o texto do email..."></textarea>
+
+      <div class="divider">ou</div>
+
+      <label for="email-file">Upload de arquivo (.txt ou .pdf):</label>
+      <input type="file" id="email-file" accept=".txt,.pdf" />
+
+      <button type="submit">Classificar Email</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2>Resultado</h2>
+      <p><strong>Categoria:</strong> <span id="category"></span></p>
+      <p><strong>Confiança:</strong> <span id="confidence"></span></p>
+      <h3>Resposta sugerida:</h3>
+      <p id="reply"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
