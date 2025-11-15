@@ -1,0 +1,26 @@
+# Ambientes virtuais
+backend/.venv/
+venv/
+.env/
+
+# Arquivos de ambiente
+backend/.env
+
+# Cache Python
+__pycache__/
+backend/__pycache__/
+
+# Arquivos temporários
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
